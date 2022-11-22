@@ -3,6 +3,10 @@ import React from 'react'
 
 function Review ()
 {
+    function onClickHandler ()
+    {
+        console.log(rating)
+    }
     function RatingIcon(props) {
     const {
     index,
@@ -82,7 +86,7 @@ function Review ()
                         })}
         </Rating>
     </div>
-    <Button type="submit">
+    <Button type="submit" onClick={event=>{onClickHandler()}}>
         Submit
         </Button>
     </form>
