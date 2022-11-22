@@ -1,4 +1,4 @@
-const Review = require('../models')
+const Review = require('../models/Review')
 
 const resolvers = {
     Query: {
@@ -6,9 +6,14 @@ const resolvers = {
         {
             return Review.find(args)
         },
-        getOIneReview: async (parent, args) =>
+        getReviewRating: async(parent, args) => {
+            return Review.find(args)
+        }
+    },
+    Mutation: {
+        addReview: async (parent, args) =>
         {
-            return Review.findOne(args)
+            return await Review.create(args)
         }
     }
 }
