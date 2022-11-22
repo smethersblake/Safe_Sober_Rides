@@ -1,7 +1,12 @@
+import Review from "../../components/Review"
+
 function Bars ()
 {
     return (
-        <h1>Bars</h1>
+        <div>
+            <h1>Bars</h1>
+            <Review/>
+        </div>
     )
 }
 export default Bars
