@@ -6,6 +6,14 @@ const typeDefs = gql`
         bar: String
         rating: Int
         name: String
-        }`
+        }
+    type Query {
+        getReview(bar: String!): [Review]
+        getReviewRating(rating: Int!): [Review]
+        }
+    type Mutation {
+        addReview(name: String!, bar: String!, rating: Int!): [Review]}
+        
+        `
 
     module.exports = typeDefs

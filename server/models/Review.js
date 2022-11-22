@@ -1,6 +1,6 @@
 const {Schema, model} = require('mongoose')
 
-const reviewScema = new Schema({
+const reviewSchema = new Schema({
     bar: {
         type: String,
         required: true
@@ -14,5 +14,5 @@ const reviewScema = new Schema({
         required: true
     }
 })
-const Review = model('Review', reviewScema)
+const Review = model('Review', reviewSchema)
 module.exports = Review
