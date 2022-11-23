@@ -20,7 +20,7 @@ function Home ()
             <div className="flex flex-wrap justify-around mt-20">
 
             <div className="max-w-sm mx-5 p-3">
-                <Card imgSrc={redFord}>
+                <Card imgSrc={redFord} className="rounded-md ring-2 ring-black">
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         We Will Drive You Home
                     </h5>
@@ -31,7 +31,7 @@ function Home ()
                 </div>
 
                 <div className="max-w-sm m-5 p-3">
-                <Card imgSrc={carKeys}>
+                <Card imgSrc={carKeys} className="rounded-md ring-2 ring-black">
                     <h5 className="text-2xl font-bold  text-gray-900 dark:text-white">
                         Need Your Car in the Morning?
                     </h5>
@@ -42,7 +42,7 @@ function Home ()
                 </div>
 
                 <div className="max-w-sm m-5 p-3">
-                <Card imgSrc={valetParking}>
+                <Card imgSrc={valetParking} className="rounded-md ring-2 ring-black">
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         Comming Soon
                     </h5>

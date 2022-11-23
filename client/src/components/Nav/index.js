@@ -20,9 +20,9 @@ function Nav ()
                             <a href="About" class="text-gray-900 dark:text-white hover:underline">About Us</a>
                         </li>
                         <li>
-                            <Dropdown label="Sponsered Bars" inline={true} dismissOnClick={true}>
+                            <Dropdown label="Sponsered Bars" inline={true} dismissOnClick={true} className="rounded-lg">
                                 {BarList.map((bar) =>
-                    <Dropdown.Item><a href={shortenName(bar)} class="text-gray-900 dark:text-white hover:underline">{bar.name}</a></Dropdown.Item>)}
+                    <Dropdown.Item className='hover:bg-blue-400 rounded-lg'><a href={shortenName(bar)} class="text-gray-900 dark:text-white hover:underline">{bar.name}</a></Dropdown.Item>)}
                             </Dropdown>
                         </li>
                         <li>
