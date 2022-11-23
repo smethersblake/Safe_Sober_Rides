@@ -3,9 +3,17 @@ import React from 'react'
 
 function Review ()
 {
+    function barName ()
+    {
+        var bar = window.location.href.slice(22)
+        return bar.replaceAll("-", " ")
+    }
+
+    
     function onClickHandler ()
     {
         console.log(rating)
+        console.log(window.location.href)
     }
     function RatingIcon(props) {
     const {
@@ -52,7 +60,7 @@ function Review ()
                     <div>
                         <div className='mb-2 block'>
                             <Label htmlFor='bar'
-                            value='BarName'/>
+                            value={barName()}/>
                         </div>
         <div className="mb-2 block">
             <Label
