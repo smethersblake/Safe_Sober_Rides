@@ -6,14 +6,15 @@ function Review ()
     function barName ()
     {
         var bar = window.location.href.slice(22)
-        return bar.replaceAll("-", " ")
+        return bar.replaceAll("-", " ").replaceAll("?","")
     }
 
     
     function onClickHandler ()
     {
-        console.log(rating)
-        console.log(window.location.href)
+        console.log(barName())
+        console.log(rating + 1)
+        console.log(document.getElementById("name").value)
     }
     function RatingIcon(props) {
     const {
@@ -80,7 +81,7 @@ function Review ()
         <div className="mb-2 block">
             </div>
                 <Rating>
-                    {[1, 2, 3, 4, 5].map((index) =>
+                    {[0,1, 2, 3, 4].map((index) =>
                         {
                             return (
                                     <RatingIcon
@@ -91,7 +92,8 @@ function Review ()
                                         onMouseLeave={onMouseLeave}
                                         onSaveRating={onSaveRating} />
                                 )
-                        })}
+                    })}
+                            
         </Rating>
     </div>
     <Button type="submit" onClick={event=>{onClickHandler()}}>
