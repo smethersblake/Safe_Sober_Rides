@@ -5,7 +5,6 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import Bars from './pages/SponseredBars';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
 import Babes from './pages/Bars/Babes';
@@ -26,7 +25,6 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/About' element={<About/>} />
-          <Route path='/Bars' element={<Bars/>} />
           <Route path='/Events' element={<Events />} />
           <Route path='/Contact' element={<Contact />} />
           <Route path='/Babes' element={<Babes />} />

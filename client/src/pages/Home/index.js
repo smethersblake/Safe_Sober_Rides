@@ -1,23 +1,26 @@
 import img from '../../components/assets/imgs/Safe Sober Rides Logo.png'
-import { Rating, TextInput, Card, Label, Button } from 'flowbite-react'
+import { Card } from 'flowbite-react'
+import redFord from '../../components/assets/imgs/Red Ford.jpg'
+import carKeys from '../../components/assets/imgs/carkeys.jpg'
+import valetParking from '../../components/assets/imgs/valet_parking.jpg'
 function Home ()
 {
     return (
-        <div className='container mx-auto my-5'>
+        <div className='container mx-auto  mb-20'>
             <div className='flex justify-end'>
                 <div>
                     <img  src={img} width='150' alt='Logo'></img>
                 </div>
             </div>
-            <div className=" my-5">
+            <div className="my-5">
                 <div>
-                    <h1 className="flex justify-start text-4xl font-bold mb-5">Let Us Get You Home Saftly</h1>
+                    <h1 className="flex flex-wrap justify-center text-5xl font-bold my-5 mx-auto">Let Us Get You Home Safe</h1>
                 </div>
             </div>
-            <div className="flex justify-between">
+            <div className="flex flex-wrap justify-around mt-20">
 
-            <div className="max-w-sm ">
-                <Card imgSrc='https://scontent-msp1-1.xx.fbcdn.net/v/t1.6435-9/52944405_2515396635202423_5378242143510855680_n.jpg?stp=dst-jpg_p526x296&_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=BKQNa1u8IXUAX-abw0h&_nc_ht=scontent-msp1-1.xx&oh=00_AfDsPbNwoENaax3NLX9n1F3bd8z7vlHS5x5IHwoj0kVUYA&oe=63A506CD'>
+            <div className="max-w-sm mx-5 p-3">
+                <Card imgSrc={redFord}>
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         We Will Drive You Home
                     </h5>
@@ -27,8 +30,8 @@ function Home ()
                 </Card>
                 </div>
 
-                <div className="max-w-sm ">
-                <Card imgSrc='http://www.allaboutparking.com/wp-content/uploads/2018/08/carkeys.jpg'>
+                <div className="max-w-sm m-5 p-3">
+                <Card imgSrc={carKeys}>
                     <h5 className="text-2xl font-bold  text-gray-900 dark:text-white">
                         Need Your Car in the Morning?
                     </h5>
@@ -38,8 +41,8 @@ function Home ()
                 </Card>
                 </div>
 
-                <div className="max-w-sm ">
-                <Card imgSrc='https://t4.ftcdn.net/jpg/02/39/12/61/360_F_239126131_hm0qqQ4cA2tvv6CKjCTONUz2Wc5xpeZN.jpg'>
+                <div className="max-w-sm m-5 p-3">
+                <Card imgSrc={valetParking}>
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         Comming Soon
                     </h5>
