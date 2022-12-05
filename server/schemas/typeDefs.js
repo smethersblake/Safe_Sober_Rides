@@ -12,7 +12,7 @@ const typeDefs = gql`
         getReviewRating(rating: Int!): [Review]
         }
     type Mutation {
-        addReview(name: String!, bar: String!, rating: Int!): [Review]}
+        addReview(name: String!, bar: String!, rating: Int!): Review}
         
         `
 
