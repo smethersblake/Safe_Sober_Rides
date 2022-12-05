@@ -29,3 +29,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
   
   // Call the async function to start the server
   startApolloServer(typeDefs, resolvers);
+
+// const express = require("express")
+// const routes = require("./controllers")
+// const path = require('path')
