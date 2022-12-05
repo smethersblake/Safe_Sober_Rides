@@ -1,5 +1,6 @@
 import { Rating, TextInput, Card, Label, Button } from 'flowbite-react'
 import React from 'react'
+import { QUERY_GET_REVIEW } from '../../utils/queries'
 
 function Review ()
 {
